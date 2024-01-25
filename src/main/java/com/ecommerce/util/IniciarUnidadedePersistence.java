@@ -13,6 +13,7 @@ public class IniciarUnidadedePersistence {
 
         Produto produto = entityManager.find(Produto.class, 1);
         System.out.println(produto.getNome());
+        System.out.println(produto.getDescricao());
 
         entityManager.close();
         entityManagerFactory.close();
